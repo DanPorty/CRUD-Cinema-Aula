@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CinemaDomain.Filme">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIACAAAQAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Filme.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Genero" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CinemaDomain.Sessao">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Filme" Type="CinemaDomain.Filme" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.188" Y="2.25" />
+        <Point X="11.188" Y="2.071" />
+        <Point X="11.083" Y="2.071" Type="JumpStart" />
+        <Point X="10.917" Y="2.071" Type="JumpEnd" />
+        <Point X="8.083" Y="2.071" Type="JumpStart" />
+        <Point X="7.917" Y="2.071" Type="JumpEnd" />
+        <Point X="6.083" Y="2.071" Type="JumpStart" />
+        <Point X="5.917" Y="2.071" Type="JumpEnd" />
+        <Point X="4.125" Y="2.071" />
+        <Point X="4.125" Y="2.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Sala" Type="CinemaDomain.Sala" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="3.625" />
+        <Point X="9.083" Y="3.63" Type="JumpStart" />
+        <Point X="8.917" Y="3.63" Type="JumpEnd" />
+        <Point X="8.75" Y="3.631" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.957" Y="-0.19" Height="0.182" Width="0.577" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAgABAAAAAEAAAAAAA=</HashCode>
+      <FileName>Sessao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Filme" />
+      <Property Name="Sala" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CinemaDomain.Sala">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAABAAAAAACAAAAAAAAAABAAA=</HashCode>
+      <FileName>Sala.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaDomain.Ingresso">
+    <Position X="5" Y="2.25" Width="2" />
+    <AssociationLine Name="Sessao" Type="CinemaDomain.Sessao" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.583" Y="4.252" />
+        <Point X="6.583" Y="4.502" />
+        <Point X="9" Y="4.502" />
+        <Point X="9" Y="3.437" />
+        <Point X="10.25" Y="3.437" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAICAAAAAAAAAEAAAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>Ingresso.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sessao" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CinemaDomain.BaseEntity">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaDomain.Genero">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Genero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaDomain.IngressoItem">
+    <Position X="6" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAABAA=</HashCode>
+      <FileName>IngressoItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ingresso" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

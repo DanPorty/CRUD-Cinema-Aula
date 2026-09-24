@@ -1,0 +1,12 @@
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\bin\Debug\net10.0\CinemaDomain.deps.json
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\bin\Debug\net10.0\CinemaDomain.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\bin\Debug\net10.0\CinemaDomain.pdb
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.AssemblyInfoInputs.cache
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.AssemblyInfo.cs
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.csproj.CoreCompileInputs.cache
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\refint\CinemaDomain.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.pdb
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\ref\CinemaDomain.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDo.B98BCA28.Up2Date
