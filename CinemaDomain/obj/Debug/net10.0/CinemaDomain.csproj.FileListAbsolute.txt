@@ -10,3 +10,4 @@ C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.pdb
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\ref\CinemaDomain.dll
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDo.B98BCA28.Up2Date
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaDomain\obj\Debug\net10.0\CinemaDomain.sourcelink.json

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CinemaDomain
 {
-    public class IngressoItem
+    public class IngressoItem : BaseEntity
     {
         public Ingresso Ingresso { get; set; }
 

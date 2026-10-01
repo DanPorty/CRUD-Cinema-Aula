@@ -74,7 +74,7 @@ namespace CinemaTest
                 Genero = genero,
                 Duracao = 120
             };
-            var sala = new Sala
+            var sala1 = new Sala
             {
                 Id = 1,
                 Numero = 1,
@@ -88,7 +88,7 @@ namespace CinemaTest
                 Id = 1,
                 Filme = filme,
                 Data = DateTime.Now,
-                Sala = sala,
+                Sala = sala1,
                 Preco = 20.0m
             };
 
