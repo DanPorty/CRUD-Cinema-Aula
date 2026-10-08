@@ -1,0 +1,16 @@
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\bin\Debug\net10.0\CinemaRepository.deps.json
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\bin\Debug\net10.0\CinemaRepository.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\bin\Debug\net10.0\CinemaRepository.pdb
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\bin\Debug\net10.0\CinemaDomain.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\bin\Debug\net10.0\CinemaDomain.pdb
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.csproj.AssemblyReference.cache
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.AssemblyInfoInputs.cache
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.AssemblyInfo.cs
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.csproj.CoreCompileInputs.cache
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.sourcelink.json
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRe.42FD6278.Up2Date
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\refint\CinemaRepository.dll
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\CinemaRepository.pdb
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaRepository\obj\Debug\net10.0\ref\CinemaRepository.dll
