@@ -44,7 +44,7 @@ namespace CinemaRepository.Base
 
         public void Delete(int id)
         {
-            _myDBContext.Remove(ReadbyId(id));
+            _myDBContext.Remove(ReadById(id));
             _myDBContext.SaveChanges();
         }
     }

@@ -13,7 +13,8 @@ namespace CinemaRepository.Mapping
         {
             builder.ToTable("Sessao");
             builder.HasKey(x => x.Id);
-            builder.Property(x=>x.Data).IsRequired();
+            builder.Property(x => x.Data).IsRequired();
+            builder.HasOne(x => x.Sala);
             builder.Property(x => x.Preco).IsRequired().HasColumnType("decimal(18,2)");
         }
     }
