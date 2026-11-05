@@ -1,0 +1,1 @@
+﻿Host=localhost;Port=5432;Database=CinemaAula;Username=postgres;Password=ifsp

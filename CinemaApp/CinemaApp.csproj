@@ -8,4 +8,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ReaLTaiizor" Version="3.8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CinemaDomain\CinemaDomain.csproj" />
+    <ProjectReference Include="..\CinemaRepository\CinemaRepository.csproj" />
+    <ProjectReference Include="..\CinemaService\CinemaService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\ConfigDB.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

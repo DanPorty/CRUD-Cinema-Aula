@@ -38,7 +38,27 @@ namespace CinemaRepository.Base
 
         public void Update(TypeEntity entity)
         {
-            _myDBContext.Entry(entity).State = EntityState.Modified;
+            /*EXPLICAÇÃO: como o EntityFramework não consegue acompanhar duas entidades com o mesmo Id
+             foi acrescentada uma verificação
+            
+             o if analisa se o ID não é nulo
+            CASO NÃO SEJA: usa o mesmo ID que esta sendo editado
+            CASO SEJA: copiar os valores da entidade de mesmo ID e atualzia como modificada*/
+
+            var localEntity = _myDBContext.Set<TypeEntity>()
+                .Local
+                .FirstOrDefault(existingEntity => existingEntity.Id == entity.Id);
+
+            if (localEntity is not null)
+            {
+                _myDBContext.Entry(localEntity).CurrentValues.SetValues(entity);
+                _myDBContext.Entry(localEntity).State = EntityState.Modified;
+            }
+            else
+            {
+                _myDBContext.Entry(entity).State = EntityState.Modified;
+            }
+
             _myDBContext.SaveChanges();
         }
 
