@@ -28,10 +28,9 @@ namespace CinemaService.Base
             where TypeOutputModel : class
             where TypeValidator : AbstractValidator<TypeEntity>
         {
-            var e = _mapper.Map<TypeEntity>(entity);
-            Validate(e, Activator.CreateInstance<TypeValidator>());
-            _baserepository.Create(e);
-            return _mapper.Map<TypeOutputModel>(e);
+            Validate(entity, Activator.CreateInstance<TypeValidator>());
+            _baserepository.Create(entity);
+            return _mapper.Map<TypeOutputModel>(entity);
         }
 
         public IEnumerable<TypeOutputModel> ReadAll<TypeOutputModel>() where TypeOutputModel : class

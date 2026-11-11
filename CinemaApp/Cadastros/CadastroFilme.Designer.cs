@@ -30,10 +30,10 @@
         {
             txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             txtNome = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            txtClassificacao = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             cmbGenero = new ReaLTaiizor.Controls.MaterialComboBox();
             numDuracao = new NumericUpDown();
             lblDuracao = new ReaLTaiizor.Controls.MaterialLabel();
+            cmbClassificacao = new ReaLTaiizor.Controls.MaterialComboBox();
             tabPageCadastro.SuspendLayout();
             tabControlCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numDuracao).BeginInit();
@@ -41,10 +41,10 @@
             // 
             // tabPageCadastro
             // 
+            tabPageCadastro.Controls.Add(cmbClassificacao);
             tabPageCadastro.Controls.Add(lblDuracao);
             tabPageCadastro.Controls.Add(numDuracao);
             tabPageCadastro.Controls.Add(cmbGenero);
-            tabPageCadastro.Controls.Add(txtClassificacao);
             tabPageCadastro.Controls.Add(txtNome);
             tabPageCadastro.Controls.Add(txtId);
             tabPageCadastro.Location = new Point(4, 29);
@@ -53,10 +53,10 @@
             tabPageCadastro.Controls.SetChildIndex(btnSalvar, 0);
             tabPageCadastro.Controls.SetChildIndex(txtId, 0);
             tabPageCadastro.Controls.SetChildIndex(txtNome, 0);
-            tabPageCadastro.Controls.SetChildIndex(txtClassificacao, 0);
             tabPageCadastro.Controls.SetChildIndex(cmbGenero, 0);
             tabPageCadastro.Controls.SetChildIndex(numDuracao, 0);
             tabPageCadastro.Controls.SetChildIndex(lblDuracao, 0);
+            tabPageCadastro.Controls.SetChildIndex(cmbClassificacao, 0);
             // 
             // tabControlCadastro
             // 
@@ -64,11 +64,11 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(688, 178);
+            btnSalvar.Location = new Point(688, 78);
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(567, 178);
+            btnCancelar.Location = new Point(567, 78);
             // 
             // txtId
             // 
@@ -88,7 +88,7 @@
             txtId.Name = "txtId";
             txtId.PasswordChar = '\0';
             txtId.PrefixSuffixText = null;
-            txtId.ReadOnly = false;
+            txtId.ReadOnly = true;
             txtId.RightToLeft = RightToLeft.No;
             txtId.SelectedText = "";
             txtId.SelectionLength = 0;
@@ -132,37 +132,6 @@
             txtNome.TrailingIcon = null;
             txtNome.UseSystemPasswordChar = false;
             // 
-            // txtClassificacao
-            // 
-            txtClassificacao.AnimateReadOnly = false;
-            txtClassificacao.AutoCompleteMode = AutoCompleteMode.None;
-            txtClassificacao.AutoCompleteSource = AutoCompleteSource.None;
-            txtClassificacao.BackgroundImageLayout = ImageLayout.None;
-            txtClassificacao.CharacterCasing = CharacterCasing.Normal;
-            txtClassificacao.Depth = 0;
-            txtClassificacao.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtClassificacao.HideSelection = true;
-            txtClassificacao.Hint = "Classificação";
-            txtClassificacao.LeadingIcon = null;
-            txtClassificacao.Location = new Point(15, 95);
-            txtClassificacao.MaxLength = 32767;
-            txtClassificacao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtClassificacao.Name = "txtClassificacao";
-            txtClassificacao.PasswordChar = '\0';
-            txtClassificacao.PrefixSuffixText = null;
-            txtClassificacao.ReadOnly = false;
-            txtClassificacao.RightToLeft = RightToLeft.No;
-            txtClassificacao.SelectedText = "";
-            txtClassificacao.SelectionLength = 0;
-            txtClassificacao.SelectionStart = 0;
-            txtClassificacao.ShortcutsEnabled = true;
-            txtClassificacao.Size = new Size(312, 60);
-            txtClassificacao.TabIndex = 4;
-            txtClassificacao.TabStop = false;
-            txtClassificacao.TextAlign = HorizontalAlignment.Left;
-            txtClassificacao.TrailingIcon = null;
-            txtClassificacao.UseSystemPasswordChar = false;
-            // 
             // cmbGenero
             // 
             cmbGenero.AutoResize = false;
@@ -172,7 +141,7 @@
             cmbGenero.DropDownHeight = 218;
             cmbGenero.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbGenero.DropDownWidth = 121;
-            cmbGenero.Font = new Font("Roboto Medium", 17.5F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cmbGenero.Font = new Font("Microsoft Sans Serif", 17.5F, FontStyle.Bold, GraphicsUnit.Pixel);
             cmbGenero.ForeColor = Color.FromArgb(222, 0, 0, 0);
             cmbGenero.FormattingEnabled = true;
             cmbGenero.Hint = "Gênero";
@@ -189,9 +158,12 @@
             // numDuracao
             // 
             numDuracao.Location = new Point(455, 55);
+            numDuracao.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
+            numDuracao.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numDuracao.Name = "numDuracao";
             numDuracao.Size = new Size(150, 27);
             numDuracao.TabIndex = 6;
+            numDuracao.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // lblDuracao
             // 
@@ -204,6 +176,30 @@
             lblDuracao.Size = new Size(75, 24);
             lblDuracao.TabIndex = 7;
             lblDuracao.Text = "Duração";
+            // 
+            // cmbClassificacao
+            // 
+            cmbClassificacao.AutoResize = false;
+            cmbClassificacao.BackColor = Color.FromArgb(255, 255, 255);
+            cmbClassificacao.Depth = 0;
+            cmbClassificacao.DrawMode = DrawMode.OwnerDrawVariable;
+            cmbClassificacao.DropDownHeight = 218;
+            cmbClassificacao.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbClassificacao.DropDownWidth = 121;
+            cmbClassificacao.Font = new Font("Microsoft Sans Serif", 17.5F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cmbClassificacao.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cmbClassificacao.FormattingEnabled = true;
+            cmbClassificacao.Hint = "Classificação";
+            cmbClassificacao.IntegralHeight = false;
+            cmbClassificacao.ItemHeight = 54;
+            cmbClassificacao.Items.AddRange(new object[] { "Livre", "6 anos", "10 anos", "12 anos", "14 anos", "16 anos", "18 anos" });
+            cmbClassificacao.Location = new Point(15, 98);
+            cmbClassificacao.MaxDropDownItems = 4;
+            cmbClassificacao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            cmbClassificacao.Name = "cmbClassificacao";
+            cmbClassificacao.Size = new Size(312, 60);
+            cmbClassificacao.StartIndex = 0;
+            cmbClassificacao.TabIndex = 8;
             // 
             // CadastroFilme
             // 
@@ -223,9 +219,9 @@
         #endregion
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtNome;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtId;
-        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtClassificacao;
         private ReaLTaiizor.Controls.MaterialLabel lblDuracao;
         private NumericUpDown numDuracao;
         private ReaLTaiizor.Controls.MaterialComboBox cmbGenero;
+        private ReaLTaiizor.Controls.MaterialComboBox cmbClassificacao;
     }
 }

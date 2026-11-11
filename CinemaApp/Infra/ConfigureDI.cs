@@ -46,15 +46,10 @@ namespace CinemaApp.Infra
             #region AutoMapper Injeção de Dependência
             Services.AddSingleton(new AutoMapper.MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Genero, Genero>();
                 cfg.CreateMap<Genero, GeneroViewModel>().ReverseMap();
-                cfg.CreateMap<Filme, Filme>();
                 cfg.CreateMap<Filme, FilmeViewModel>()
                     .ForMember(dest => dest.GeneroId, opt => opt.MapFrom(src => src.Genero.Id))
                     .ForMember(dest => dest.GeneroNome, opt => opt.MapFrom(src => src.Genero.Nome));
-                cfg.CreateMap<Sala, Sala>();
-                cfg.CreateMap<Sessao, Sessao>();
-                cfg.CreateMap<Ingresso, Ingresso>();
             }, NullLoggerFactory.Instance).CreateMapper());
             #endregion
 
