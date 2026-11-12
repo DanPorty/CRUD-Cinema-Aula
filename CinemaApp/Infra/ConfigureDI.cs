@@ -58,6 +58,8 @@ namespace CinemaApp.Infra
             }, NullLoggerFactory.Instance);
             #endregion
 
+            Services.AddSingleton(mapperConfig.CreateMapper());
+
             Services.AddTransient<CadastroGenero, CadastroGenero>();
             Services.AddTransient<CadastroFilme, CadastroFilme>();
             Services.AddTransient<CadastroSala, CadastroSala>();

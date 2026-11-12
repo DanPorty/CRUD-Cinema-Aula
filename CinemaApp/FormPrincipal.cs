@@ -25,5 +25,12 @@ namespace CinemaApp
             cadastroFilme.MdiParent = this;
             cadastroFilme.Show();
         }
+
+        private void salaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroSala cadastroSala = ConfigureDI.ServiceProvider.GetService<CadastroSala>();
+            cadastroSala.MdiParent = this;
+            cadastroSala.Show();
+        }
     }
 }

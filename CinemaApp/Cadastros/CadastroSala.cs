@@ -1,25 +1,27 @@
-﻿using CinemaApp.Base;
+﻿
+using CinemaApp.Base;
+using CinemaApp.Models;
 using CinemaDomain;
 using CinemaService.Base;
 using CinemaService.Validators;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CinemaApp.Cadastros
 {
     public partial class CadastroSala : CadastroBase
     {
-        private readonly IBaseService<Sala> _salaService;
+        private readonly InterfaceBaseService<Sala> _salaService;
         private List<SalaViewModel> _salas;
-        public CadastroSala()
+
+        public CadastroSala(InterfaceBaseService<Sala> salaService)
         {
+            _salaService = salaService;
             InitializeComponent();
         }
+
         private void PreencheObjeto(Sala sala)
         {
             sala.Numero = (int)nudNumero.Value;
@@ -31,9 +33,9 @@ namespace CinemaApp.Cadastros
         private void PreencheTela(Sala sala)
         {
             nudNumero.Value = sala.Numero;
-            nudCapacidade.Value = sala.Numero;
-            nudFileiras.Value = sala.Fileiras;
             nudCapacidade.Value = sala.Capacidade;
+            nudFileiras.Value = sala.Fileiras;
+            nudAssentos.Value = sala.Assentos;
         }
 
         protected override void Salvar()
@@ -78,7 +80,6 @@ namespace CinemaApp.Cadastros
         {
             _salas = _salaService.ReadAll<SalaViewModel>().ToList();
             dataGridViewConsulta.DataSource = _salas;
-
         }
 
         protected override void CarregarRegistro(DataGridViewRow row)
