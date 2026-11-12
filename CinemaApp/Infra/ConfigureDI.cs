@@ -1,4 +1,5 @@
 ﻿
+using AutoMapper;
 using CinemaApp.Cadastros;
 using CinemaApp.Models;
 using CinemaDomain;
@@ -44,17 +45,22 @@ namespace CinemaApp.Infra
             #endregion
 
             #region AutoMapper Injeção de Dependência
-            Services.AddSingleton(new AutoMapper.MapperConfiguration(cfg =>
+            var mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Genero, GeneroViewModel>().ReverseMap();
                 cfg.CreateMap<Filme, FilmeViewModel>()
                     .ForMember(dest => dest.GeneroId, opt => opt.MapFrom(src => src.Genero.Id))
                     .ForMember(dest => dest.GeneroNome, opt => opt.MapFrom(src => src.Genero.Nome));
-            }, NullLoggerFactory.Instance).CreateMapper());
+                cfg.CreateMap<Sala, SalaViewModel>().ReverseMap();
+                cfg.CreateMap<Sessao, SessaoViewModel>().ReverseMap();
+                cfg.CreateMap<Ingresso, IngressoViewModel>().ReverseMap();
+                cfg.CreateMap<IngressoItem, IngressoItemViewModel>().ReverseMap();
+            }, NullLoggerFactory.Instance);
             #endregion
 
             Services.AddTransient<CadastroGenero, CadastroGenero>();
             Services.AddTransient<CadastroFilme, CadastroFilme>();
+            Services.AddTransient<CadastroSala, CadastroSala>();
 
             ServiceProvider = Services.BuildServiceProvider();
         }
