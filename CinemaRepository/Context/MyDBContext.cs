@@ -19,6 +19,7 @@ namespace CinemaRepository.Context
 
             public MyDBContext(DbContextOptions<MyDBContext> options) : base(options)
             {
+                AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
                 Database.EnsureCreated();
             }
 

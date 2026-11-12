@@ -76,6 +76,7 @@
             sessãoToolStripMenuItem.Name = "sessãoToolStripMenuItem";
             sessãoToolStripMenuItem.Size = new Size(180, 22);
             sessãoToolStripMenuItem.Text = "Sessão";
+            sessãoToolStripMenuItem.Click += sessaoToolStripMenuItem_Click;
 
             // 
             // vendaToolStripMenuItem
