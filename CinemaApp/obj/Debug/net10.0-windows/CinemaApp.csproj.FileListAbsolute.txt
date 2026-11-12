@@ -48,3 +48,4 @@ C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaApp\obj\Debug\net
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaApp\obj\Debug\net10.0-windows\ref\CinemaApp.dll
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaApp\bin\Debug\net10.0-windows\Config\ConfigDB.txt
 C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaApp\obj\Debug\net10.0-windows\CinemaApp.Cadastros.CadastroFilme.resources
+C:\Users\bruno\Documents\facul\facul2026\2sem\poe\Cinema\CinemaApp\obj\Debug\net10.0-windows\CinemaApp.Cadastros.CadastroSessao.resources
